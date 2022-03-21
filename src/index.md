@@ -5,7 +5,7 @@ layout: base.njk
 ---
 
 
-![{{title}}]({{img}})
+![{{title}}]({{img | url}})
 
 # StarGazers
 

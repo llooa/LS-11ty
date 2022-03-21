@@ -5,7 +5,7 @@ layout: base.njk
 ---
 
 
-![{{title}}]({{img}})
+![{{title}}]({{img | url}})
 
 Founded in 2012, Big Star Collectibles is the premier online retailer of trading card and other collectibles. If your hobby is collecting, we've got the stock you want.
 
