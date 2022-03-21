@@ -1,0 +1,17 @@
+{
+  "name": "ls-11ty",
+  "version": "1.0.0",
+  "description": "11ty test site",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "author": "LeeShin",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.0",
+    "markdown-it": "^12.3.2",
+    "markdown-it-attrs": "^4.1.3"
+  }
+}
