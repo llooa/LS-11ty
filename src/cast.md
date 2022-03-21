@@ -16,7 +16,7 @@ console.log("Take me to your leader");
 ```
 
 # Aneirin
-<img src="/images/aneirin_tn.svg" width="200" alt="Aneirin">
+![Aneirin]({{ '/images/aneirin_tn.svg' | url}})
 
 Aneirin is the foremost expert of cold climates in planetoids universe-wide, with a particular inquisitiveness in areas colder than -300 F / - 184.4444444 C (hence the profound personal interest in knitting mittens). Having travelled extensively, Aneirin enjoys collecting, receiving, and sending distinctive postcards from all corners of the macrocosm.
 
@@ -37,7 +37,8 @@ Aneirin is the foremost expert of cold climates in planetoids universe-wide, wit
 {.table}
 
 # Celestia Dristi"
-<img src="/images/celestia-dristi_tn.svg" width="200" alt="Celestia Dristi">
+
+![Celestia Dristi]({{ '/images/celestia-dristi_tn.svg' | url}})
 
 As a mobility engineer, Celestia Dristi helps individuals and companies to improve personal and professional agility and growth in technology and systems. An expert in translating and implementing needs into functionality, Celestia Dristi has a unique proclivity for solving problems and helping to avoid future issues.
 
@@ -58,7 +59,7 @@ As a mobility engineer, Celestia Dristi helps individuals and companies to impro
 {.table}
 
 # Charmaine
-<img src="/images/charmaine_tn.svg" width="200" alt="Charmaine">
+<img src="{{'/images/charmaine_tn.svg' | url}}" width="200" alt="Charmaine">
 
 Charmaine loves fossils from every society and planet, and helping to piece together the stories they tell of an earlier time. Once completing university studies in paleontology with a minor in swimming arts, Charmaine immediately transitioned to working on the now-famous Dig of Pleoria.
 
@@ -79,7 +80,7 @@ Charmaine loves fossils from every society and planet, and helping to piece toge
 {.table}
 
 # Emmyloo, "em"
-<img src="/images/emmyloo-em_tn.svg" width="200" alt="Emmyloo em">
+<img src="{{'/images/emmyloo-em_tn.svg' | url}}" width="200" alt="Emmyloo em">
 
 If you look up “lexicography” in the dictionary, you will see a photo of Emmyloo. She claims that her devotion to lexicography began as early as two years old, when she spoke her first full sentence. Fluent in 94 languages, Emmyloo helps in analyzing relationships among words and the nuances of their meanings and relationships to other words.
 
@@ -100,7 +101,7 @@ If you look up “lexicography” in the dictionary, you will see a photo of Emm
 {.table}
 
 # Gill
-<img src="/images/gill_tn.svg" width="200" alt="Gill">
+<img src="{{'/images/gill_tn.svg' | url}}" width="200" alt="Gill">
 
 Gill carries on generations of tradition in his family as a hydrologist specializing in underground reservoirs of aquatic-based planetoids. Of note is his revolutionary studies in the adaptation and accumulation of life in estuaries and cenotes. He volunteers as an instructor in advanced swimming and walking to young Amphibians.
 
