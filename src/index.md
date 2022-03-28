@@ -1,20 +1,34 @@
 ---
-title: StarGazers
+title: LS-11ty Project
 img: /images/group.svg
-layout: base.njk
+date: Created
+layout: home
+tags:
+    - home
+    - welcome
+    - info
+skills:
+    - 11ty
+    - Nunjucks
+    - JavaScript
+    - Bootstrap 5.0
+    - Markdown
 ---
 
 
-![{{title}}]({{img | url}})
+**Date Created**: {{page.date | simpleDate }} <!--use filter to format date-->
 
-# StarGazers
+# {{title}}
 
-The Stargazers are members of the _Intergalactic Alliance_ paving the way for peace and benevolence among all species. They are known for their enthusiasm for science, for their love of fun, and their dedication to education.
+Welcome to LS-11ty project. This is one of my first projects created using 11ty, bootstrap and markdown. It has been a fun learning new skills.
 
-# Communication
+Most of the contents are created based on Ray Villalobos' courses on LinkedIn
 
-Stargazers are fluent in **JavaScript**, so once you connect to their network, simply type in a message into their console.
+### List of skills
+<ul>
+    {% for item in skills %}
+   <li>{{ item | capitalize}} </li>
+    {% endfor %}
+</ul>
 
-```js
-console.log("Take me to your leader");
-```
+---

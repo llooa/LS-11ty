@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>LS-11ty Project with Bootstrap | Data Visualization</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand navbar-dark bg-dark mb-3">
+  <div class="container">
+    <a href="/LS-11ty/" class="navbar-brand">
+     <i class="fas fa-cube mr-2"></i>&nbsp;LS-11ty
+    </a>
+
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a href="/LS-11ty/" class="nav-link"><i class="fas fa-home"></i></a>
+      </li>
+      <li class="nav-item">
+        <a href="/LS-11ty/posts/0" class="nav-link">Posts</a>
+      </li>     
+      <li class="nav-item">
+          <a href="/LS-11ty/clients/" class="nav-link">Clients</a>
+        </li><li class="nav-item">
+          <a href="/LS-11ty/courses/" class="nav-link">Courses</a>
+        </li><li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            More
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown"><li><a class="dropdown-item" target="_blank" href="https://github.com/llooa">
+              <i class="fab fa-github text-secondary mr-2"></i>&nbsp;Github</a>
+            </li><li><a class="dropdown-item" target="_blank" href="https://linkedin.com/in/lslooa">
+              <i class="fab fa-linkedin text-secondary mr-2"></i>&nbsp;Linkedin</a>
+            </li><li><a class="dropdown-item" target="_blank" href="https://www.youtube.com/channel/UC_d6eHjmfGGBejFvicqLynQ">
+              <i class="fab fa-youtube text-secondary mr-2"></i>&nbsp;Youtube</a>
+            </li><li><a class="dropdown-item" target="_blank" href="https://www.instagram.com/leeshdesign">
+              <i class="fab fa-instagram text-secondary mr-2"></i>&nbsp;Instagram</a>
+            </li></ul>
+      </li>               
+    </ul>
+  </div>
+</nav> 
+
+  <main class="container">
+    <main class="container py-4">
+  <h2>Vector Graphics</h2>
+<p>Vector graphics are different than bitmaps because instead of storing information for each pixel in an image, mathematical formulas for each element in an image is stored in a programming language that can rebuild the image on any screen at the best resolution available.</p>
+<p>A mathematical calculation is often smaller than a bitmap. Take a look at the graphic below and scroll through the code. You can see that it isn't just a series of pixels, but a mathematical definition of the lines, strokes and colors of shapes.</p>
+<p><a class="jsbin-embed" href="http://jsbin.com/hotaqe/2/embed?html,output"></a><script src="http://static.jsbin.com/js/embed.js"></script></p>
+<p>Because they're mathematical definitions instead of pixels, it means that no matter what size or the resolution of the device, the image will always look the same. This image is only 3k...a fraction of what it would take a bitmap of a similar size.</p>
+<p>This, of course, is a huge advantage over bitmaps, but vectors are only good for certain types of images. They're not great for representing photographic images or things that can best be expressed solely as bitmaps. However, they are excellent for interactive web graphics and even better for web animations, especially data visualizations.</p>
+<h2>Common Web formats and visualization</h2>
+<p>Online graphics are usually served in just a few formats. The most common bitmap formats are GIF, JPEG and PNG. Because these formats are, for the most part, static (with the exception of GIF), they are not best for representing data for visualizations. In addition to being difficult to animate, individual data points or elements are not accessible through JavaScript.</p>
+<table>
+<thead>
+<tr>
+<th>Format</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GIF</td>
+<td>256 colors max</td>
+</tr>
+<tr>
+<td>JPEG</td>
+<td>24-Bit True color</td>
+</tr>
+<tr>
+<td>PNG</td>
+<td>Up to 64-bit</td>
+</tr>
+</tbody>
+</table>
+<h2>Vector Graphics Online</h2>
+<p>For vector graphics on web projects and visualizations, there's three options available. Using HTML/CSS, HTML/Canvas or SVG.</p>
+<h3>HTML/CSS Vector Graphics</h3>
+<p>The first, CSS, is probably the easiest to get started with, but also the most complex and least flexible. CSS has very few primitives (simple shapes) and lets you create rectangles with rounded edges that you can draw with as well as some lines, but that's not nearly enough primitives for complex graphics. Although some people have managed to create fairly complex images with CSS (see figure below) it's not considered a viable option for anything other than simple visualizations.</p>
+<p data-height="268" data-theme-id="0" data-slug-hash="faJpv" data-default-tab="result" data-user="jacksaidwhat" class='codepen'>See the Pen <a href='http://codepen.io/jacksaidwhat/pen/faJpv/'>Pure CSS Totoro</a> by Jack Parsons (<a href='http://codepen.io/jacksaidwhat'>@jacksaidwhat</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+<h3>The HTML <code>&lt;canvas&gt;</code> Element</h3>
+<p>Second, there's a way to create graphics through an HTML element called <code>&lt;canvas&gt;</code>. Canvas is part of the HTML5 specification, the language that makes up modern web pages. To create a graphic, you create a <code>&lt;canvas&gt;</code> tag in your HTML, give it an ID and then use javascript to write with a rich graphics language.</p>
+<p><a class="jsbin-embed" href="http://jsbin.com/zoxoke/2/embed?js,output">JS Bin</a><script src="http://static.jsbin.com/js/embed.js"></script></p>
+<p>The browser will take that data, and convert it to a bitmap that renders within a specified area.</p>
+<p>When you generate a canvas element, what gets placed in your HMTL document is a bitmap image. The vector instructions are interpreted, but then quickly converted to a bitmap and that's what you see in the browser. This is the equivalent of placing a PNG graphic, except that you can program that graphic with JavaScript to do things. This is a bit different than what happens in SVG which generates individual shapes that remain a vector in the browser and become part of your HTML document.</p>
+<p>The commands for drawing are also more like commands than objects. Here's an example of what it would take to draw a rectangle on the screen.</p>
+<pre><code class="language-javascript">function drawRect() {
+  var canvas = document.getElementById('rect')
+  var context = canvas.getContext('2d')
+  context.fillStyle = 'rgb(233,192,117)'
+  context.fillRect(0, 0, 100, 100)
+}
+</code></pre>
+<p>Using canvas feels more like programming and is very fast. Most of the time this language is too difficult to use for visualizations manually. Some sort of compiler will generate the code for you. This is a very good format in a lot of cases and performs better when you have a lot of elements in your visualization because it will be faster, but it's definitely a bit harder to work with the original elements.</p>
+
+</main>
+
+  </main>
+     <nav class="nav-social navbar navbar-expand navbar-dark bg-dark justify-content-center">
+  <div class="navbar-nav">
+    
+    <a class="nav-item nav-link" target="_blank" href="https://github.com/llooa">
+      <i class="nav-social-icon fab fa-github mr-2"></i>&nbsp;
+      <span class="align-text-bottom text-white d-none d-lg-inline">Github</span>
+    </a>
+    
+    <a class="nav-item nav-link" target="_blank" href="https://linkedin.com/in/lslooa">
+      <i class="nav-social-icon fab fa-linkedin mr-2"></i>&nbsp;
+      <span class="align-text-bottom text-white d-none d-lg-inline">Linkedin</span>
+    </a>
+    
+    <a class="nav-item nav-link" target="_blank" href="https://www.youtube.com/channel/UC_d6eHjmfGGBejFvicqLynQ">
+      <i class="nav-social-icon fab fa-youtube mr-2"></i>&nbsp;
+      <span class="align-text-bottom text-white d-none d-lg-inline">Youtube</span>
+    </a>
+    
+    <a class="nav-item nav-link" target="_blank" href="https://www.instagram.com/leeshdesign">
+      <i class="nav-social-icon fab fa-instagram mr-2"></i>&nbsp;
+      <span class="align-text-bottom text-white d-none d-lg-inline">Instagram</span>
+    </a>
+    
+  </div>
+</nav>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+
+  </body>
+</html>

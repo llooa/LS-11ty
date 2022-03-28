@@ -1,7 +1,7 @@
 ---
 title: Big Star Collectibles
 img: /images/logo_bigstar.svg
-layout: base.njk
+layout: base
 ---
 
 

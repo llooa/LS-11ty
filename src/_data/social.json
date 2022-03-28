@@ -1,0 +1,22 @@
+[
+  {
+    "name": "github",
+    "iconClass": "fab fa-github",
+    "url": "https://github.com/llooa"
+  },
+  {
+    "name": "linkedin",
+    "iconClass": "fab fa-linkedin",
+    "url": "https://linkedin.com/in/lslooa"
+  },
+  {
+    "name": "youtube",
+    "iconClass": "fab fa-youtube",
+    "url": "https://www.youtube.com/channel/UC_d6eHjmfGGBejFvicqLynQ"
+  },
+  {
+    "name": "instagram",
+    "iconClass": "fab fa-instagram",
+    "url": "https://www.instagram.com/leeshdesign"
+  }
+]

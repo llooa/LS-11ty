@@ -1,11 +1,12 @@
 ---
 title: StarGazers Casts
 img: /images/logo_stargazers_bug.svg
-layout: base.njk
+layout: base
+permalink: '/cast-{{ pkg.author | slug }}/'
 ---
 
 
-# Cast
+# {{title}}
 
 The Stargazers are members of the _Intergalactic Alliance_ paving the way for peace and benevolence among all species. They are known for their enthusiasm for science, for their love of fun, and their dedication to education.
 

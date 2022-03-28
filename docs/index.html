@@ -3,41 +3,212 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
-    <title>LS-11ty Project with Bootstrap</title>
+    <title>LS-11ty Project with Bootstrap | LS-11ty Project</title>
   </head>
   <body>
-   <nav class="navbar navbar-expand navbar-dark bg-primary mb-3">
+    <nav class="navbar navbar-expand navbar-dark bg-dark mb-3">
   <div class="container">
     <a href="/LS-11ty/" class="navbar-brand">
-      <img src="/LS-11ty/images/logo_stargazers_bug.svg" alt="Stargazer Logo" style="max-width:35px;"> StarGazer
+     <i class="fas fa-cube mr-2"></i>&nbsp;LS-11ty
     </a>
 
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a href="/LS-11ty/" class="nav-link">Home</a>
+        <a href="/LS-11ty/" class="nav-link"><i class="fas fa-home"></i></a>
       </li>
       <li class="nav-item">
-        <a href="/LS-11ty/cast" class="nav-link">Cast</a>
-      </li>
+        <a href="/LS-11ty/posts/0" class="nav-link">Posts</a>
+      </li>     
       <li class="nav-item">
-        <a href="/LS-11ty/collectibles" class="nav-link">Collectibles</a>
-      </li>
+          <a href="/LS-11ty/clients/" class="nav-link">Clients</a>
+        </li><li class="nav-item">
+          <a href="/LS-11ty/courses/" class="nav-link">Courses</a>
+        </li><li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            More
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown"><li><a class="dropdown-item" target="_blank" href="https://github.com/llooa">
+              <i class="fab fa-github text-secondary mr-2"></i>&nbsp;Github</a>
+            </li><li><a class="dropdown-item" target="_blank" href="https://linkedin.com/in/lslooa">
+              <i class="fab fa-linkedin text-secondary mr-2"></i>&nbsp;Linkedin</a>
+            </li><li><a class="dropdown-item" target="_blank" href="https://www.youtube.com/channel/UC_d6eHjmfGGBejFvicqLynQ">
+              <i class="fab fa-youtube text-secondary mr-2"></i>&nbsp;Youtube</a>
+            </li><li><a class="dropdown-item" target="_blank" href="https://www.instagram.com/leeshdesign">
+              <i class="fab fa-instagram text-secondary mr-2"></i>&nbsp;Instagram</a>
+            </li></ul>
+      </li>               
     </ul>
   </div>
-</nav>
+</nav> 
+
   <main class="container">
-    <p><img src="/LS-11ty/images/group.svg" alt="StarGazers"></p>
-<h1>StarGazers</h1>
-<p>The Stargazers are members of the <em>Intergalactic Alliance</em> paving the way for peace and benevolence among all species. They are known for their enthusiasm for science, for their love of fun, and their dedication to education.</p>
-<h1>Communication</h1>
-<p>Stargazers are fluent in <strong>JavaScript</strong>, so once you connect to their network, simply type in a message into their console.</p>
-<pre><code class="language-js">console.log(&quot;Take me to your leader&quot;);
-</code></pre>
+    <p><strong>Date Created</strong>: Mar 19, 2022 <!--use filter to format date--></p>
+<h1>LS-11ty Project</h1>
+<p>Welcome to LS-11ty project. This is one of my first projects created using 11ty, bootstrap and markdown. It has been a fun learning new skills.</p>
+<p>Most of the contents are created based on Ray Villalobos' courses on LinkedIn</p>
+<h3>List of skills</h3>
+<ul>
+   <li>11ty </li>
+   <li>Nunjucks </li>
+   <li>Javascript </li>
+   <li>Bootstrap 5.0 </li>
+   <li>Markdown </li>
+</ul>
+<hr>
+
+ <header class="mb-4">
+<h3>Latest Posts</h3>
+ <div class="small">&raquo; <a class="text-muted" href="posts/0">more posts</a></div>
+ </header>
+<div class="row">
+ <div class="main-content col-lg-9">
+    <div class="row">
+      <div class="col">
+          
+          <article class="mb-5 position-relative">
+            <div class="row">
+              <div class="col-12 col-sm-4">
+                <img class="w-100 rounded" src="images/posts/chromeextensions_tn.png" alt="">
+                <time class="item-date small d-block text-muted mb-2" datetime="Sat Mar 26 2022 17:00:00 GMT-0700 (Pacific Daylight Time)">Mar 27, 2022</time>
+              </div>
+              <div class="col">
+                <h4>Chrome Developer Extensions for Designers/Developers</h4>
+                <p class="mb-0">Google Chrome Extensions can help you take care of certain tasks quickly. Here&#39;s a quick review of some of my favorite extensions for web design and development.</p>
+              </div>
+            </div>
+            <div class="text-end">
+              <a href="/LS-11ty/posts/2022-03-27-chrome-developer/" class="btn btn-sm btn-outline-secondary stretched-link">read more</a>
+            </div>
+          </article>
+          
+          <article class="mb-5 position-relative">
+            <div class="row">
+              <div class="col-12 col-sm-4">
+                <img class="w-100 rounded" src="images/posts/json_tn.png" alt="">
+                <time class="item-date small d-block text-muted mb-2" datetime="Tue Mar 22 2022 17:00:00 GMT-0700 (Pacific Daylight Time)">Mar 23, 2022</time>
+              </div>
+              <div class="col">
+                <h4>Getting started with JSON</h4>
+                <p class="mb-0">Javascript has grown from a way to add interactivity on your page, to a language that lets you perform tasks that once belonged to servers. JSON provides for an easy way to create and store data structures within JavaScript. It’s super popular and a great alternative to XML.</p>
+              </div>
+            </div>
+            <div class="text-end">
+              <a href="/LS-11ty/posts/2022-03-23-json-tutorial/" class="btn btn-sm btn-outline-secondary stretched-link">read more</a>
+            </div>
+          </article>
+          
+          <article class="mb-5 position-relative">
+            <div class="row">
+              <div class="col-12 col-sm-4">
+                <img class="w-100 rounded" src="images/posts/horizontally_tn.png" alt="">
+                <time class="item-date small d-block text-muted mb-2" datetime="Thu Feb 10 2022 16:00:00 GMT-0800 (Pacific Standard Time)">Feb 11, 2022</time>
+              </div>
+              <div class="col">
+                <h4>Horizontally Centered Navigation Menu with CSS</h4>
+                <p class="mb-0">Getting a menu to center horizontally is surprisingly hard, especially when you&#39;re using CSS lists. In this tutorial, I&#39;ll show you how to change the display element to pretend you&#39;re centering a table, which is easy.</p>
+              </div>
+            </div>
+            <div class="text-end">
+              <a href="/LS-11ty/posts/2022-02-11-centered-navigation-table-css/" class="btn btn-sm btn-outline-secondary stretched-link">read more</a>
+            </div>
+          </article>
+          
+          <article class="mb-5 position-relative">
+            <div class="row">
+              <div class="col-12 col-sm-4">
+                <img class="w-100 rounded" src="images/posts/json_tn.png" alt="">
+                <time class="item-date small d-block text-muted mb-2" datetime="Thu Jan 20 2022 16:00:00 GMT-0800 (Pacific Standard Time)">Jan 21, 2022</time>
+              </div>
+              <div class="col">
+                <h4>Data Visualization</h4>
+                <p class="mb-0">Javascript has grown from a way to add interactivity on your page, to a language that lets you perform tasks that once belonged to servers. JSON provides for an easy way to create and store data structures within JavaScript. It’s super popular and a great alternative to XML.</p>
+              </div>
+            </div>
+            <div class="text-end">
+              <a href="/LS-11ty/posts/2022-01-21-data-visualization/" class="btn btn-sm btn-outline-secondary stretched-link">read more</a>
+            </div>
+          </article>
+          
+          <article class="mb-5 position-relative">
+            <div class="row">
+              <div class="col-12 col-sm-4">
+                <img class="w-100 rounded" src="images/posts/jsfrontend_tn.png" alt="">
+                <time class="item-date small d-block text-muted mb-2" datetime="Mon Dec 20 2021 16:00:00 GMT-0800 (Pacific Standard Time)">Dec 21, 2021</time>
+              </div>
+              <div class="col">
+                <h4>6 JavaScript technologies you should already know</h4>
+                <p class="mb-0">Life&#39;s tough for a front end developer because the pace of learning moves so fast. Today&#39;s developer needs to be familiar with a number of libraries, frameworks and processes in order to be successful. Here&#39;s my list of JavaScript technologies that you should already be familiar with if you&#39;re a professional front end developer.</p>
+              </div>
+            </div>
+            <div class="text-end">
+              <a href="/LS-11ty/posts/2021-12-21-javascript-you-should-already-know/" class="btn btn-sm btn-outline-secondary stretched-link">read more</a>
+            </div>
+          </article>
+          
+      </div>
+    </div>
+</div>
+<sidebar class="col-12 col-lg-3">
+    <header class="mb-4">
+      <h4 class="text-secondary mt-2 mb-0">Latest Courses</h4>
+      <div class="small">&raquo; <a class="text-muted" href="courses">more courses</a></div>
+    </header>
+    
+    <article class="row mb-5">
+      <div class="col">
+        <img class="img-fluid rounded" src="/LS-11ty/images/courses/svelte_tn.jpg" alt="Svelte: First Look">
+        <time class="item-date small d-block text-muted mb-2" datetime="Dec 9, 2019">2019-12-09</time>
+        <h5>Svelte: First Look</h5>
+        <p class="mb-0" style="font-size: .9em">JavaScript frameworks and libraries keep growing, sprouting increasingly more dependencies along the way. Svelte—a new, lightweight component framework—marches into this tangle with a brush cutter, trimming down the weeds to provide a core set of key functionalities with zero dependencies.</p>
+        <div class="text-end">
+          <a href="https://www.linkedin.com/learning/svelte-first-look" class="btn btn-sm btn-outline-secondary">watch</a>
+        </div>
+      </div>
+    </article>
+    
+    <article class="row mb-5">
+      <div class="col">
+        <img class="img-fluid rounded" src="/LS-11ty/images/courses/gulp_tn.jpg" alt="Gulp.js: Web Project Workflows">
+        <time class="item-date small d-block text-muted mb-2" datetime="Oct 31, 2019">2019-10-31</time>
+        <h5>Gulp.js: Web Project Workflows</h5>
+        <p class="mb-0" style="font-size: .9em">Gulp.js make setting up compression, minification, preprocessing, and other common tasks as easy as writing a setup file. In this course, learn how to use gulp.js to build workflows that make managing the process of building websites a bit easier.</p>
+        <div class="text-end">
+          <a href="https://www.linkedin.com/learning/gulp-js-web-project-workflows" class="btn btn-sm btn-outline-secondary">watch</a>
+        </div>
+      </div>
+    </article>
+    
+  </sidebar>
+  </div>
 
   </main>
- 
+     <nav class="nav-social navbar navbar-expand navbar-dark bg-dark justify-content-center">
+  <div class="navbar-nav">
+    
+    <a class="nav-item nav-link" target="_blank" href="https://github.com/llooa">
+      <i class="nav-social-icon fab fa-github mr-2"></i>&nbsp;
+      <span class="align-text-bottom text-white d-none d-lg-inline">Github</span>
+    </a>
+    
+    <a class="nav-item nav-link" target="_blank" href="https://linkedin.com/in/lslooa">
+      <i class="nav-social-icon fab fa-linkedin mr-2"></i>&nbsp;
+      <span class="align-text-bottom text-white d-none d-lg-inline">Linkedin</span>
+    </a>
+    
+    <a class="nav-item nav-link" target="_blank" href="https://www.youtube.com/channel/UC_d6eHjmfGGBejFvicqLynQ">
+      <i class="nav-social-icon fab fa-youtube mr-2"></i>&nbsp;
+      <span class="align-text-bottom text-white d-none d-lg-inline">Youtube</span>
+    </a>
+    
+    <a class="nav-item nav-link" target="_blank" href="https://www.instagram.com/leeshdesign">
+      <i class="nav-social-icon fab fa-instagram mr-2"></i>&nbsp;
+      <span class="align-text-bottom text-white d-none d-lg-inline">Instagram</span>
+    </a>
+    
+  </div>
+</nav>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
 

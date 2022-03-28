@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>LS-11ty Project with Bootstrap | Horizontally Centered Navigation Menu with CSS</title>
+  </head>
+  <body>
+   <nav class="navbar navbar-expand navbar-dark bg-primary mb-3">
+  <div class="container">
+    <a href="/LS-11ty/" class="navbar-brand">
+      <img src="/LS-11ty/images/logo_stargazers_bug.svg" alt="Stargazer Logo" style="max-width:35px;">LS-11ty
+    </a>
+
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a href="/LS-11ty/" class="nav-link">Home</a>
+      </li>
+      <li class="nav-item">
+        <a href="/LS-11ty/clients" class="nav-link">Clients</a>
+      </li>   
+      <li class="nav-item">
+        <a href="/LS-11ty/courses" class="nav-link">Courses</a>
+      </li>         
+    </ul>
+  </div>
+</nav>
+  <main class="container">
+    <main class="container py-4">
+  <div class="embed-responsive embed-responsive-16by9">
+<iframe class="embed-responsive-item" width="700" height="450" src="https://www.youtube.com/embed/RT64aSNXnzY" frameborder="0" allowfullscreen></iframe>
+</div>
+<p>One of the first things you try to do when you learn CSS is to create a centered navigation menu, but it's not as straightforward as it should be. You'd think that there was some sort of center command and in the future, something like <a href="http://css-tricks.com/snippets/css/a-guide-to-flexbox/">flexbox</a> will make it a lot easier. But even flexbox is no magic bullet with poor browser support in older browsers and frankly, a somewhat confusing syntax.</p>
+<p>My current approach is to do something that ends up looking like this.</p>
+<p><a class="jsbin-embed" href="http://jsbin.com/popalu/11/embed?output">JS Bin</a><script src="http://static.jsbin.com/js/embed.js"></script></p>
+<h2>The Trick</h2>
+<p>Since you can just read the code above or watch the video, I'll give you the highlights so you can catch the critical part.</p>
+<pre><code class="language-html">&lt;nav class=&quot;sitemenu&quot;&gt;
+  &lt;div class=&quot;navwrapper&quot;&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt; MySite&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt; Home&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;about us&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt; contact us&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/nav&gt;
+</code></pre>
+<p>I've simplified it a bit here for clarity. The key extra item here is the addition of a wrapper div with a class navwrapper. In order to get this to work you'll need this extra piece of HTML.</p>
+<pre><code class="language-css">.sitemenu {
+  width: 100%;
+  background: #a2cea5;
+  font-family: 'Droid Sans', serif;
+  border-top: 8px solid #126758;
+}
+</code></pre>
+<p>##Set the width of main container<br>
+The main thing here is the <code>width: 100%;</code> on the nav with the sitemenu class. You should have a container here that makes the width of the navigation container go full width. If you examine the code (by clicking on the HTML tab in the code window).</p>
+<h2>Enter the table style</h2>
+<p>next, you need to have another container inside the first one that sets its display to show up as if it were a table.</p>
+<pre><code class="language-css">.sitemenu &gt; .navwrapper {
+  display: table;
+  margin: 0 auto;
+}
+</code></pre>
+<p>The code that actually centers the table is the <code>margin: 0 auto;</code> line. This item will be the width of the menus, regardless of their size. Normally to center an element, you have to know its width, but setting the display to table here bypasses that.</p>
+<p>Honestly, the rest is just window dressing and pretty easy to follow from the code, so <a href="http://jsbin.com/popalu/9/">take a look at the jsbin</a> to learn more.</p>
+
+</main>
+
+  </main>
+     <nav class="nav-social navbar navbar-expand navbar-dark bg-dark justify-content-center">
+  <div class="navbar-nav">
+    
+    <a class="nav-item nav-link" target="_blank" href="https://github.com/llooa">
+      <i class="nav-social-icon fab fa-github mr-2"></i>
+      <span class="align-text-bottom text-white d-none d-lg-inline">github</span>
+    </a>
+    
+    <a class="nav-item nav-link" target="_blank" href="https://linkedin.com/in/lslooa">
+      <i class="nav-social-icon fab fa-linkedin mr-2"></i>
+      <span class="align-text-bottom text-white d-none d-lg-inline">linkedin</span>
+    </a>
+    
+    <a class="nav-item nav-link" target="_blank" href="https://www.youtube.com/channel/UC_d6eHjmfGGBejFvicqLynQ">
+      <i class="nav-social-icon fab fa-youtube mr-2"></i>
+      <span class="align-text-bottom text-white d-none d-lg-inline">youtube</span>
+    </a>
+    
+    <a class="nav-item nav-link" target="_blank" href="https://www.instagram.com/leeshdesign">
+      <i class="nav-social-icon fab fa-instagram mr-2"></i>
+      <span class="align-text-bottom text-white d-none d-lg-inline">instagram</span>
+    </a>
+    
+  </div>
+</nav>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+
+  </body>
+</html>

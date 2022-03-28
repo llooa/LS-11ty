@@ -1,0 +1,22 @@
+---
+layout: base
+headerHeight: 50vh
+---
+{% set css %}
+    {% include "styles.css" %}
+{% endset %}
+<style>
+  {{ css | safe }}
+</style>
+
+<div class="hero-image" style="height: 499px;">
+  <div class="hero-text">
+    <h1 style="font-size:50px">{{ title }}</h1>
+    {{ summary | safe }}     
+    <button>Hire me</button>
+  </div>
+</div>
+
+<div class="container py-4">
+  {{ content | safe }}
+</div>
